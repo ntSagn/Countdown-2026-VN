@@ -24,10 +24,9 @@ const DateDisplay = ({ targetDate }) => {
         </p>
       </div>
       
-      <div className="justify-center text-center text-3xl font-bold text-yellow-300 p-3 rounded-lg flex items-center">
-        <span className="calendar-icon mr-2">📅</span>
+      <div className="justify-center text-center text-xl font-bold text-yellow-300 p-3 rounded-lg flex items-center">
         <p className="text-2xl font-bold">
-          Hôm nay {today.gregorian} tức ngày {today.lunar} (âm lịch)
+          <span></span>Hôm nay {today.gregorian} tức ngày {today.lunar} (âm lịch)
         </p>
       </div>
     </div>

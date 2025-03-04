@@ -36,7 +36,7 @@ const CountdownTimer = ({ targetDate }) => {
   };
 
   return (
-    <div className="flex justify-center space-x-2 md:space-x-4 my-6">
+    <div className="flex flex-wrap justify-center space-x-2 md:space-x-4 my-6">
       <CountdownBox value={timeLeft.days} label="Ngày" />
       <CountdownBox value={formatTime(timeLeft.hours)} label="Giờ" />
       <CountdownBox value={formatTime(timeLeft.minutes)} label="Phút" />
@@ -47,11 +47,11 @@ const CountdownTimer = ({ targetDate }) => {
 
 const CountdownBox = ({ value, label }) => {
   return (
-    <div className="flex flex-col items-center">
-      <div className="bg-white text-red-600 text-4xl md:text-6xl font-bold p-4 rounded-md w-24 md:w-32 text-center">
+    <div className="flex flex-col items-center m-2">
+      <div className="bg-white text-red-600 text-2xl md:text-4xl lg:text-6xl font-bold p-2 md:p-4 rounded-md w-20 md:w-24 lg:w-32 text-center">
         {value}
       </div>
-      <div className="bg-gray-900 text-white text-lg md:text-xl font-medium p-2 rounded-b-md w-24 md:w-32 text-center">
+      <div className="bg-gray-900 text-white text-sm md:text-lg lg:text-xl font-medium p-1 md:p-2 rounded-b-md w-20 md:w-24 lg:w-32 text-center">
         {label}
       </div>
     </div>
